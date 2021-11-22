@@ -176,6 +176,9 @@ public class MainClass {
         goodForAnimalSection.setNumber(10);
         goodForAnimalSection.setManager(goodForAnimalManager);
 
+        store.addSection(goodForAnimalSection);
+
+
     }
 
 }
