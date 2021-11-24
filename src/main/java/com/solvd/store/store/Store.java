@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Store {
 
+    private String name;
     private List<Section> sections;
 
     public List<Section> getSections() {

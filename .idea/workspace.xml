@@ -6,17 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="748fa8ad-9640-4c55-9cb0-90f5276238a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/CargoTransportation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/CashDesk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/CashRegisterMachine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Refrigerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Storage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Warehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
