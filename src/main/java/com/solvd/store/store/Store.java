@@ -1,19 +1,16 @@
 package com.solvd.store.store;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Store {
 
-    private ArrayList<Section> sections = new ArrayList<>();
-    public void addSection(Section section) {
-        this.sections.add(section);
-    }
+    private List<Section> sections;
 
-    public ArrayList<Section> getSections() {
+    public List<Section> getSections() {
         return sections;
     }
 
-    public void setSections(ArrayList<Section> sections) {
+    public void setSections(List<Section> sections) {
         this.sections = sections;
     }
 }

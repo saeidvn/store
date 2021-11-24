@@ -2,20 +2,11 @@ package com.solvd.store.store;
 
 import java.time.LocalDate;
 
-public class Product {
+public class Visa {
 
     private Long id;
-    private String name;
-    private LocalDate createdDate;
+    private String number;
     private LocalDate expireDate;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public Long getId() {
         return id;
@@ -25,12 +16,12 @@ public class Product {
         this.id = id;
     }
 
-    public LocalDate getCreatedDate() {
-        return createdDate;
+    public String getNumber() {
+        return number;
     }
 
-    public void setCreatedDate(LocalDate createdDate) {
-        this.createdDate = createdDate;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public LocalDate getExpireDate() {

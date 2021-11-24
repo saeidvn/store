@@ -1,6 +1,6 @@
 package com.solvd.store.store;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Section {
 
@@ -8,7 +8,7 @@ public class Section {
     private Integer number;
     private Employee manager;
     private Employee security;
-    private ArrayList<Product> products = new ArrayList<>();
+    private List<Product> products;
 
     public String getName() {
         return name;
@@ -34,11 +34,11 @@ public class Section {
         this.manager = manager;
     }
 
-    public ArrayList<Product> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(ArrayList<Product> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
 

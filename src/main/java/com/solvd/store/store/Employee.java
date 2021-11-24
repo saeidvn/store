@@ -1,19 +1,40 @@
 package com.solvd.store.store;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Employee {
 
-    private String name;
+    private Long id;
+    private String firstName;
+    private String lastName;
     private LocalDate dateOfBirth;
-    private int idNumber;
+    private Passport passport;
+    private Address address;
+    private List<Child> children;
 
-    public String getName() {
-        return name;
+    public Long getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public LocalDate getDateOfBirth() {
@@ -24,11 +45,27 @@ public class Employee {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Integer getIdNumber() {
-        return idNumber;
+    public Passport getPassport() {
+        return passport;
     }
 
-    public void setIdNumber(Integer idNumber) {
-        this.idNumber = idNumber;
+    public void setPassport(Passport passport) {
+        this.passport = passport;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public List<Child> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<Child> children) {
+        this.children = children;
     }
 }
