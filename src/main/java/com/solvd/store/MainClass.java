@@ -4,16 +4,12 @@ import com.solvd.store.domain.Employee;
 import com.solvd.store.domain.Product;
 import com.solvd.store.domain.Section;
 import com.solvd.store.domain.Store;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class MainClass {
-
-    private static final Logger LOGGER = LogManager.getLogger(MainClass.class);
 
     private static LocalDate convertStringToLocalDate(String date) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-d");
