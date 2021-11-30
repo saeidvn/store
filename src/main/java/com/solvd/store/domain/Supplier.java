@@ -1,10 +1,10 @@
-package com.solvd.store.store;
+package com.solvd.store.domain;
 
-public class Child {
+public class Supplier {
 
     private Long id;
     private String name;
-    private Integer age;
+    private Address address;
 
     public Long getId() {
         return id;
@@ -22,11 +22,11 @@ public class Child {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

@@ -1,8 +1,8 @@
-package com.solvd.store.store;
+package com.solvd.store.domain;
 
 import java.time.LocalDate;
 
-public class Passport {
+public class Visa {
 
     private Long id;
     private String number;

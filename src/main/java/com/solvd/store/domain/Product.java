@@ -1,4 +1,4 @@
-package com.solvd.store.store;
+package com.solvd.store.domain;
 
 import java.time.LocalDate;
 

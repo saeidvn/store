@@ -1,12 +1,13 @@
-package com.solvd.store.store;
+package com.solvd.store.domain;
 
 import java.time.LocalDate;
 
-public class Visa {
+public class Passport {
 
     private Long id;
     private String number;
     private LocalDate expireDate;
+    private Visa visa;
 
     public Long getId() {
         return id;
@@ -30,5 +31,13 @@ public class Visa {
 
     public void setExpireDate(LocalDate expireDate) {
         this.expireDate = expireDate;
+    }
+
+    public Visa getVisa() {
+        return visa;
+    }
+
+    public void setVisa(Visa visa) {
+        this.visa = visa;
     }
 }

@@ -1,10 +1,23 @@
 create database if not exists shop;
 use shop;
 
+create table if not exists Addresses (
+	id serial,
+    country varchar(45) not null,
+    city varchar(45) not null,
+    street varchar(45) not null,
+    entrance varchar(45) not null,
+    primary key (id)
+);
+
 create table if not exists Stores (
 	id serial,
+    address_id bigint unsigned not null,
     name varchar(45) not null,
-    primary key (id)
+    primary key (id),
+    constraint fk_stores_address_id foreign key (address_id) references Addresses(id)
+    on update no action
+    on delete cascade
 );
 
 create table if not exists Passports (
@@ -33,6 +46,7 @@ create table if not exists Employees (
 	id serial,
     store_id bigint unsigned not null,
     passport_id bigint unsigned not null,
+    address_id bigint unsigned not null,
     first_name varchar(45) not null,
     last_name varchar(45) not null,
     date_of_birth timestamp not null,
@@ -43,7 +57,10 @@ create table if not exists Employees (
     constraint fk_employees_passport_id foreign key (passport_id) references Passports(id)
     on update no action
     on delete cascade,
-    unique index(passport_id) 
+    unique index(passport_id),
+    constraint fk_employees_address_id foreign key (address_id) references Addresses(id)
+    on update no action
+    on delete cascade
 );
 -- create unique index unique_idx_Employees_passport_id on Employees(passport_id);
 
@@ -94,9 +111,13 @@ create table if not exists employee_sections (
 create table if not exists Suppliers (
 	id serial,
     store_id bigint unsigned not null,
+    address_id bigint unsigned not null,
     name varchar(45) not null,
     primary key (id),
     constraint fk_suppliers_store_id foreign key (store_id) references Stores(id)
+    on update no action
+    on delete cascade,
+    constraint fk_suppliers_address_id foreign key (address_id) references Addresses(id)
     on update no action
     on delete cascade
 );
@@ -129,33 +150,17 @@ create table if not exists product_suppliers (
 create table if not exists Warehouses (
 	id serial,
     store_id bigint unsigned not null,
+    address_id bigint unsigned not null,
     name varchar(45) not null,
     primary key (id),
     constraint fk_warehouses_store_id foreign key (store_id) references Stores(id)
     on update no action
+    on delete cascade,
+    constraint fk_warehouses_address_id foreign key (address_id) references Addresses(id)
+    on update no action
     on delete cascade
 );
 
-create table if not exists Addresses (
-	id serial,
-    store_id bigint unsigned not null,
-    employee_id bigint unsigned not null,
-    warehouse_id bigint unsigned not null,
-    country varchar(45) not null,
-    city varchar(45) not null,
-    street varchar(45) not null,
-    entrance varchar(45) not null,
-    primary key (id),
-    constraint fk_addresses_store_id foreign key (store_id) references Stores(id)
-    on update no action
-    on delete cascade,
-    constraint fk_addresses_employee_id foreign key (employee_id) references Employees(id)
-    on update no action
-    on delete cascade,
-    constraint fk_addresses_warehouse_id foreign key (warehouse_id) references Warehouses(id)
-    on update no action
-    on delete cascade
-);
 
 
 

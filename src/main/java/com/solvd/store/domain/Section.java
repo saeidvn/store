@@ -1,14 +1,23 @@
-package com.solvd.store.store;
+package com.solvd.store.domain;
 
 import java.util.List;
 
 public class Section {
 
+    private Long id;
     private String name;
     private Integer number;
     private Employee manager;
     private Employee security;
     private List<Product> products;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -42,9 +51,9 @@ public class Section {
         this.products = products;
     }
 
-    public void addProduct(Product product) {
-        this.products.add(product);
-    }
+//    public void addProduct(Product product) {
+//        this.products.add(product);
+//    }
 
     public Employee getSecurity() {
         return security;

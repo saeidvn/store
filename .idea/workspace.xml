@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fa8ad-9640-4c55-9cb0-90f5276238a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dml.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Supplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Visa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Visa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/store/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/DDL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ddl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/DML.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/query.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/query.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shop.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shop.mwb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

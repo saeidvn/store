@@ -1,9 +1,9 @@
 package com.solvd.store;
 
-import com.solvd.store.store.Employee;
-import com.solvd.store.store.Product;
-import com.solvd.store.store.Section;
-import com.solvd.store.store.Store;
+import com.solvd.store.domain.Employee;
+import com.solvd.store.domain.Product;
+import com.solvd.store.domain.Section;
+import com.solvd.store.domain.Store;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,7 +27,7 @@ public class MainClass {
         ArrayList<Product> products = new ArrayList<>();
         ArrayList<Section> sections = new ArrayList<>();
 
-        Section warehouse = new Section();
+        Store warehouse = new Store();
 
         Section managerSection = new Section();
         Section securitySection = new Section();
@@ -49,7 +49,7 @@ public class MainClass {
 
         Employee meatManager = new Employee();
         meatManager.setFirstName("Jack");
-        meatManager.getId();
+//        meatManager.getId();
         meatManager.setDateOfBirth(convertStringToLocalDate("1980-01-01"));
 
         meatSection.setName("Meat Sector");
@@ -58,29 +58,34 @@ public class MainClass {
 
         Product pork = new Product();
         pork.setName("Pork");
-//        pork.setId();
+//        pork.getId();
         pork.setCreatedDate(convertStringToLocalDate("2021-01-01"));
         pork.setExpireDate(convertStringToLocalDate("2022-01-01"));
 
         Product lamb = new Product();
         lamb.setName("Lamb");
-//        lamb.setId(2);
+//        lamb.getId();
         lamb.setCreatedDate(convertStringToLocalDate("2021-01-01"));
         lamb.setExpireDate(convertStringToLocalDate("2022-01-01"));
 
 //        meatSection.addProduct(pork);
 //        meatSection.addProduct(lamb);
 
-//        store.addSection(meatSection);
+//        products.add(pork);
+//        products.add(lamb);
+
+        System.out.println(pork.getId());
+
+        sections.add(meatSection);
 
         Employee meatSorter = new Employee();
         meatSorter.setFirstName("Jannie");
-        meatSorter.getId();
+//        meatSorter.getId();
         meatSorter.setDateOfBirth(convertStringToLocalDate("1980-01-01"));
 
         Employee managerStore = new Employee();
         managerStore.setFirstName("Rose");
-        managerStore.getId();
+//        managerStore.getId();
         managerStore.setDateOfBirth(convertStringToLocalDate("1970-01-01"));
 
         managerSection.setName("Manager room");
@@ -91,7 +96,7 @@ public class MainClass {
 
         Employee securityStore = new Employee();
         securityStore.setFirstName("Arnold");
-        securityStore.getId();
+//        securityStore.getId();
         securityStore.setDateOfBirth(convertStringToLocalDate("2000-05-05"));
 
         securitySection.setName("Security room");
@@ -102,7 +107,7 @@ public class MainClass {
 
         Employee fruitManager = new Employee();
         fruitManager.setFirstName("Jasmin");
-        fruitManager.getId();
+//        fruitManager.getId();
         fruitManager.setDateOfBirth(convertStringToLocalDate("1975-02-02"));
 
         fruitSection.setName("Fruit Sector");
@@ -113,7 +118,7 @@ public class MainClass {
 
         Employee breadManager = new Employee();
         breadManager.setFirstName("Caitlin");
-        breadManager.getId();
+//        breadManager.getId();
         breadManager.setDateOfBirth(convertStringToLocalDate("1978-03-05"));
 
         breadSection.setName("Bread Sector");
@@ -124,7 +129,7 @@ public class MainClass {
 
         Employee dairyProductManager = new Employee();
         dairyProductManager.setFirstName("Jhonny");
-        dairyProductManager.getId();
+//        dairyProductManager.getId();
         dairyProductManager.setDateOfBirth(convertStringToLocalDate("1980-09-02"));
 
         dairyProductSection.setName("Dairy Products Sector");
@@ -135,7 +140,7 @@ public class MainClass {
 
         Employee beverageManager = new Employee();
         beverageManager.setFirstName("Angela");
-        beverageManager.getId();
+//        beverageManager.getId();
         beverageManager.setDateOfBirth(convertStringToLocalDate("1996-11-12"));
 
         beverageSection.setName("Beverage Sector");
@@ -146,7 +151,7 @@ public class MainClass {
 
         Employee groceryManager = new Employee();
         groceryManager.setFirstName("Galina");
-        groceryManager.getId();
+//        groceryManager.getId();
         groceryManager.setDateOfBirth(convertStringToLocalDate("1991-01-28"));
 
         grocerySection.setName("Grocery Sector");
@@ -157,7 +162,7 @@ public class MainClass {
 
         Employee householdGoodManager = new Employee();
         householdGoodManager.setFirstName("Bruce");
-        householdGoodManager.getId();
+//        householdGoodManager.getId();
         householdGoodManager.setDateOfBirth(convertStringToLocalDate("1999-10-20"));
 
         householdGoodSection.setName("Household goods Sector");
@@ -168,7 +173,7 @@ public class MainClass {
 
         Employee goodForAnimalManager = new Employee();
         goodForAnimalManager.setFirstName("Rose");
-        goodForAnimalManager.getId();
+//        goodForAnimalManager.getId();
         goodForAnimalManager.setDateOfBirth(convertStringToLocalDate("2002-08-08"));
 
         goodForAnimalSection.setName("Goods for animal Sector");
@@ -177,6 +182,12 @@ public class MainClass {
 
 //        store.addSection(goodForAnimalSection);
 
+        warehouse.setName("Central warehouse");
+//        warehouse.getId();
+//        System.out.println(warehouse.);
+
+        store.getWarehouse();
+        System.out.println(store.getWarehouse());
 
     }
 

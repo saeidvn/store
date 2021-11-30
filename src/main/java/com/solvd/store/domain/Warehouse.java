@@ -1,10 +1,9 @@
-package com.solvd.store.store;
+package com.solvd.store.domain;
 
 public class Warehouse {
 
     private Long id;
     private String name;
-    private Section section;
 
     public Long getId() {
         return id;
@@ -14,11 +13,12 @@ public class Warehouse {
         this.id = id;
     }
 
-    public Section getSection() {
-        return section;
+    public String getName() {
+        return name;
     }
 
-    public void setSection(Section section) {
-        this.section = section;
+    public void setName(String name) {
+        this.name = name;
     }
+
 }
