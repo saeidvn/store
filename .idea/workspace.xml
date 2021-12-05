@@ -5,14 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fa8ad-9640-4c55-9cb0-90f5276238a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/ConnectionPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IAddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IAddressRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IChildRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IChildRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IPassportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IPassportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/ISectionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IStoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IStoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/ISupplierRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IVisaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IWarehouseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/ChildRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/ChildRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/ProductRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/SectionRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/StoreRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/StoreRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/SupplierRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/VisaRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/WarehouseRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IAddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IChildService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IChildService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IPassportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IPassportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/ISectionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/ISupplierService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IVisaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IWarehouseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/ChildServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/ChildServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/PassportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/PassportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/SectionServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/StoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/SupplierServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/VisaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/WarehouseServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/query.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ddl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dml.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dml.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shop.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/store.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shop.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/store.mwb.bak" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +71,24 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21E4mIQzyTHsG28wF8OyBTimmWI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -42,6 +102,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../metro" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.solvd.store.persistence" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -73,6 +139,20 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/StoreRepositoryImpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

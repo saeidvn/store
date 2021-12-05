@@ -1,5 +1,9 @@
-create database if not exists shop;
-use shop;
+drop database if exists store;
+create database store;
+use store;
+
+-- create database if not exists shop;
+-- use shop;
 
 create table if not exists Addresses (
 	id serial,
@@ -160,8 +164,3 @@ create table if not exists Warehouses (
     on update no action
     on delete cascade
 );
-
-
-
-
-

@@ -6,8 +6,7 @@ import java.util.List;
 
 public interface IStoreRepository {
 
-    void create (Store store);
-
+    void create (Store store, Long addressId);
     List<Store> findAll();
 
 }

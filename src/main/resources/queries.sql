@@ -1,13 +1,19 @@
-use shop;
+use store;
 
 select id, name from Stores;
+
 select first_name, date_of_birth from Employees where last_name = 'Hamilton';
+
 select store_id, passport_id, address_id, first_name, last_name, date_of_birth from Employees;
+
 select first_name, last_name from Employees order by first_name, last_name DESC;
+
 select count(address_id), first_name, last_name from Employees group by first_name, last_name;
+
 select count(address_id), first_name from Employees group by first_name having count(address_id) < 7;
+
 select name from Stores where name like "%t%"; 
-select name from Stores where name like "%pp%"; 
+select name from Stores where name like "%pp"; 
 select name from Stores where name in ('Gippo', 'Hit');
 select name from Children where age >= 18;
 select first_name from Employees where id = 1 or id >= 6;
@@ -38,4 +44,5 @@ left join employee_children ec
 on e.id = ec.employee_id
 left join Children ch
 on ec.child_id = ch.id;
-		
+
+select * from Stores;

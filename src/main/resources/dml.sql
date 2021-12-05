@@ -1,4 +1,4 @@
-use shop;
+use store;
 
 insert into Addresses (country, city, street, entrance) values
 	('Belarus', 'Minsk', 'Moskovskaja', 1),

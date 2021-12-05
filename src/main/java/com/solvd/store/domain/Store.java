@@ -6,9 +6,11 @@ public class Store {
 
     private Long id;
     private String name;
+    private Address address;
     private Warehouse warehouse;
     private Supplier supplier;
     private List<Section> sections;
+    private List<Employee> employees;
 
     public Long getId() {
         return id;
@@ -24,6 +26,14 @@ public class Store {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public Warehouse getWarehouse() {
@@ -48,5 +58,13 @@ public class Store {
 
     public void setSections(List<Section> sections) {
         this.sections = sections;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
     }
 }

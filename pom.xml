@@ -12,6 +12,8 @@
     <properties>
         <javaVersion>1.8</javaVersion>
         <mySqlConnectorVersion>8.0.27</mySqlConnectorVersion>
+        <version.commons-io>2.4</version.commons-io>
+        <mybatis-plus.version>2.1.8</mybatis-plus.version>
     </properties>
 
     <dependencies>
@@ -19,6 +21,16 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mySqlConnectorVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${version.commons-io}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>${mybatis-plus.version}</version>
         </dependency>
     </dependencies>
 

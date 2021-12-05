@@ -9,15 +9,15 @@ import java.util.Properties;
 
 public final class Config {
 
-    public static final String JDBC_DRIVER;
+    public static final String DRIVER;
     public static final String URL;
-    public static final String USER;
+    public static final String USERNAME;
     public static final String PASSWORD;
 
     static {
-        JDBC_DRIVER = getValueFromConfig("JDBC_DRIVER");
+        DRIVER = getValueFromConfig("DRIVER");
         URL = getValueFromConfig("URL");
-        USER = getValueFromConfig("USER");
+        USERNAME = getValueFromConfig("USERNAME");
         PASSWORD = getValueFromConfig("PASSWORD");
     }
 
@@ -34,5 +34,4 @@ public final class Config {
         }
         return value;
     }
-
 }
