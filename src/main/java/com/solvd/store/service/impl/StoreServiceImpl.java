@@ -2,21 +2,23 @@ package com.solvd.store.service.impl;
 
 import com.solvd.store.domain.Address;
 import com.solvd.store.domain.Store;
-import com.solvd.store.persistence.IStoreRepository;
+import com.solvd.store.persistence.StoreRepository;
+import com.solvd.store.persistence.impl.StoreMyBatisImpl;
 import com.solvd.store.persistence.impl.StoreRepositoryImpl;
-import com.solvd.store.service.IAddressService;
-import com.solvd.store.service.IStoreService;
+import com.solvd.store.service.AddressService;
+import com.solvd.store.service.StoreService;
 
 import java.util.List;
 
-public class StoreServiceImpl implements IStoreService {
+public class StoreServiceImpl implements StoreService {
 
-    private final IStoreRepository iStoreRepository;
-    private final IAddressService iAddressService;
+    private final StoreRepository storeRepository;
+    private final AddressService addressService;
 
     public StoreServiceImpl() {
-        this.iStoreRepository = new StoreRepositoryImpl();
-        this.iAddressService = new AddressServiceImpl();
+//        this.storeRepository = new StoreRepositoryImpl();
+        this.storeRepository = new StoreMyBatisImpl();
+        this.addressService = new AddressServiceImpl();
     }
 
     @Override
@@ -24,16 +26,15 @@ public class StoreServiceImpl implements IStoreService {
         store.setId(null);
 
         if (store.getAddress() != null) {
-            Address address = iAddressService.create(store.getAddress());
+            Address address = addressService.create(store.getAddress());
             store.setAddress(address);
         }
-        iStoreRepository.create(store, store.getAddress().getId());
+        storeRepository.create(store);
         return store;
     }
 
     @Override
-    public List<Store> selectAll() {
-        iStoreRepository.findAll();
-        return null;
+    public List<Store> findAll() {
+        return storeRepository.findAll();
     }
 }

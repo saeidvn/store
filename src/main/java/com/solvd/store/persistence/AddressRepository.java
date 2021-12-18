@@ -2,7 +2,7 @@ package com.solvd.store.persistence;
 
 import com.solvd.store.domain.Address;
 
-public interface IAddressRepository {
+public interface AddressRepository {
 
-    Address create (Address address);
+    void create (Address address);
 }

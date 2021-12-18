@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.store.persistence.AddressRepository">
+    <insert id="create" keyProperty="id" useGeneratedKeys="true">
+        Insert into Addresses (country, city, street, entrance) values (#{country}, #{city}, #{street},
+        #{entrance})
+    </insert>
+
+    <resultMap id="AddressResultMap" type="com.solvd.store.domain.Address" autoMapping="false">
+        <id property="id" column="address_id"/>
+        <result property="country" column="address_country"/>
+        <result property="city" column="address_city"/>
+        <result property="street" column="address_street"/>
+        <result property="entrance" column="address_entrance"/>
+    </resultMap>
+
+</mapper>

@@ -1,15 +1,18 @@
 package com.solvd.store.service.impl;
 
 import com.solvd.store.domain.Child;
+import com.solvd.store.persistence.ChildRepository;
+import com.solvd.store.persistence.impl.ChildMyBatisImpl;
 import com.solvd.store.persistence.impl.ChildRepositoryImpl;
-import com.solvd.store.service.IChildService;
+import com.solvd.store.service.ChildService;
 
-public class ChildServiceImpl implements IChildService {
+public class ChildServiceImpl implements ChildService {
 
-    private final ChildRepositoryImpl childRepository;
+    private final ChildRepository childRepository;
 
     public ChildServiceImpl() {
-        this.childRepository = new ChildRepositoryImpl();
+//        this.childRepository = new ChildRepositoryImpl();
+        this.childRepository = new ChildMyBatisImpl();
     }
 
     @Override

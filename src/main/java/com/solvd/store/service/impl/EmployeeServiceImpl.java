@@ -2,32 +2,36 @@ package com.solvd.store.service.impl;
 
 import com.solvd.store.domain.Child;
 import com.solvd.store.domain.Employee;
-import com.solvd.store.persistence.IEmployeeRepository;
+import com.solvd.store.persistence.EmployeeRepository;
+import com.solvd.store.persistence.impl.EmployeeMyBatisImpl;
 import com.solvd.store.persistence.impl.EmployeeRepositoryImpl;
-import com.solvd.store.service.IChildService;
-import com.solvd.store.service.IEmployeeService;
+import com.solvd.store.service.ChildService;
+import com.solvd.store.service.EmployeeService;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class EmployeeServiceImpl implements IEmployeeService {
+public class EmployeeServiceImpl implements EmployeeService {
 
-    private final IEmployeeRepository iEmployeeRepository;
-    private final IChildService iChildService;
+    private final EmployeeRepository employeeRepository;
+    private final ChildService childService;
 
     public EmployeeServiceImpl() {
-        this.iEmployeeRepository = new EmployeeRepositoryImpl();
-        this.iChildService = new ChildServiceImpl();
+//        this.employeeRepository = new EmployeeRepositoryImpl();
+        this.employeeRepository = new EmployeeMyBatisImpl();
+        this.childService = new ChildServiceImpl();
     }
 
     @Override
-    public Employee create(Employee employee,  Long storeId, Long passportId, Long addressId) {
+    public Employee create(Employee employee) {
         employee.setId(null);
-        iEmployeeRepository.create(employee, storeId, passportId, addressId);
+        employeeRepository.create(employee);
         if (employee.getChildren() != null) {
             List<Child> children = employee.getChildren().stream()
-                    .map(child -> iChildService.create(child))
+                    .map(child -> childService.create(child))
+                    .peek(child -> employeeRepository.linkChild(employee.getId(), child.getId()))
                     .collect(Collectors.toList());
+            employee.setChildren(children);
         }
         return employee;
     }

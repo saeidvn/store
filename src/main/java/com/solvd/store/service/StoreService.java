@@ -4,9 +4,8 @@ import com.solvd.store.domain.Store;
 
 import java.util.List;
 
-public interface IStoreService {
+public interface StoreService {
 
     Store create (Store store);
-    List<Store> selectAll();
-
+    List<Store> findAll();
 }

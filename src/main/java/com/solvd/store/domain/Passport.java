@@ -1,6 +1,5 @@
 package com.solvd.store.domain;
 
-import java.sql.Date;
 import java.time.LocalDate;
 
 public class Passport {
@@ -40,5 +39,14 @@ public class Passport {
 
     public void setVisa(Visa visa) {
         this.visa = visa;
+    }
+
+    @Override
+    public String toString() {
+        return "Passport{" +
+                "id=" + id +
+                ", number='" + number + '\'' +
+                ", expireDate=" + expireDate +
+                '}';
     }
 }

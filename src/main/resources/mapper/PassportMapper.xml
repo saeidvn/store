@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.store.persistence.PassportRepository">
+    <insert id="create" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+        Insert into Passports (number, expire_date) values (#{number}, #{expireDate})
+    </insert>
+
+    <resultMap id="PassportResultMap" type="com.solvd.store.domain.Passport" autoMapping="false">
+        <id property="id" column="passport_id"/>
+        <result property="number" column="passport_number"/>
+        <result property="expireDate" column="passport_expireDate"/>
+    </resultMap>
+
+</mapper>

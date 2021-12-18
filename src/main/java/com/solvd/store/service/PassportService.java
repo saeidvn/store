@@ -2,8 +2,8 @@ package com.solvd.store.service;
 
 import com.solvd.store.domain.Passport;
 
-public interface IPassportService {
+public interface PassportService {
 
-    Passport create (Passport passport);
+    void create (Passport passport);
 
 }

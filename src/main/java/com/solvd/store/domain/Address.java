@@ -48,4 +48,14 @@ public class Address {
         this.entrance = house;
     }
 
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", country='" + country + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", entrance='" + entrance + '\'' +
+                '}';
+    }
 }

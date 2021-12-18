@@ -1,12 +1,10 @@
 package com.solvd.store.persistence;
 
 import com.solvd.store.domain.Child;
+import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
-
-public interface IChildRepository {
+public interface ChildRepository {
 
     void create (Child child);
 
-    Child create(List<Child> children);
 }

@@ -3,11 +3,11 @@ package com.solvd.store.persistence.impl;
 import com.solvd.store.domain.Passport;
 import com.solvd.store.domain.exeption.ProcessingException;
 import com.solvd.store.persistence.ConnectionPool;
-import com.solvd.store.persistence.IPassportRepository;
+import com.solvd.store.persistence.PassportRepository;
 
 import java.sql.*;
 
-public class PassportRepositoryImpl implements IPassportRepository {
+public class PassportRepositoryImpl implements PassportRepository {
 
     private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
 
@@ -15,7 +15,7 @@ public class PassportRepositoryImpl implements IPassportRepository {
     public void create(Passport passport) {
         Connection connection = CONNECTION_POOL.getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(
-                "Insert into Passports(number, expireDate) value (?, ?)", Statement.RETURN_GENERATED_KEYS)) {
+                "Insert into Passports(number, expire_date) value (?, ?)", Statement.RETURN_GENERATED_KEYS)) {
             preparedStatement.setString(1, passport.getNumber());
             preparedStatement.setDate(2, Date.valueOf(passport.getExpireDate()));
 

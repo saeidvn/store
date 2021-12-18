@@ -12,6 +12,7 @@ public class Employee {
     private Passport passport;
     private Address address;
     private List<Child> children;
+    private Store store;
 
     public Long getId() {
         return id;
@@ -67,5 +68,27 @@ public class Employee {
 
     public void setChildren(List<Child> children) {
         this.children = children;
+    }
+
+    public Store getStore() {
+        return store;
+    }
+
+    public void setStore(Store store) {
+        this.store = store;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", passport=" + passport +
+                ", address=" + address +
+                ", children=" + children +
+                ", store=" + store +
+                '}';
     }
 }

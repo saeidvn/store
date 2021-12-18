@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.store.persistence.EmployeeRepository">
+    <insert id="create" keyProperty="employee.id" useGeneratedKeys="true">
+        Insert into Employees(store_id, passport_id, address_id, first_name, last_name, date_of_birth)
+        values (#{store.id}, #{passport.id}, #{address.id}, #{firstName}, #{lastName},
+        #{dateOfBirth})
+    </insert>
+
+    <resultMap id="EmployeeResultMap" type="com.solvd.store.domain.Employee" autoMapping="false">
+        <id property="id" column="employee_id"/>
+        <result property="firstName" column="employee_first_name"/>
+        <result property="lastName" column="employee_last_name"/>
+        <result property="dateOfBirth" column="employee_date_of_birth"/>
+        <association property="store" resultMap="com.solvd.store.persistence.StoreRepository.StoreResultMap"/>
+        <association property="passport" resultMap="com.solvd.store.persistence.PassportRepository.PassportResultMap"/>
+        <association property="address" resultMap="com.solvd.store.persistence.AddressRepository.AddressResultMap"/>
+    </resultMap>
+
+</mapper>

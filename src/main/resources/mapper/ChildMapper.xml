@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.store.persistence.ChildRepository">
+    <insert id="create" keyProperty="id" useGeneratedKeys="true">
+        Insert into Children (name, age) values (#{name}, #{age})
+    </insert>
+
+    <resultMap id="ChildResultMap" type="com.solvd.store.domain.Child" autoMapping="false">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+    </resultMap>
+
+</mapper>

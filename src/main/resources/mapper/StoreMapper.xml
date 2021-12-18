@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.store.persistence.StoreRepository">
+    <insert id="create" keyProperty="id" useGeneratedKeys="true">
+        Insert into Stores (address_id, name) values (#{address.id}, #{name})
+    </insert>
+    
+    <select id="findAll" resultMap="StoreResultMap">
+        select s.id as store_id, s.name as store_name,
+        e.id as employee_id, e.first_name as employee_first_name, e.last_name as employee_last_name, e.date_of_birth as employee_date_of_birth,
+        p.id as passport_id, p.number as passport_number, p.expire_date as passport_expireDate,
+        a.id as address_id, a.country as address_country, a.city as address_city, a.street as address_street, a.entrance as address_entrance
+        from Stores as s
+        left join Addresses as a on a.id = s.address_id
+        left join Employees as e on e.store_id = s.id
+        left join Passports as p on e.passport_id = p.id
+    </select>
+
+    <resultMap id="StoreResultMap" type="com.solvd.store.domain.Store" autoMapping="false">
+        <id property="id" column="store_id"/>
+        <result property="name" column="store_name"/>
+        <association property="address" resultMap="com.solvd.store.persistence.AddressRepository.AddressResultMap"/>
+        <collection property="employees"  javaType="ArrayList" resultMap="com.solvd.store.persistence.EmployeeRepository.EmployeeResultMap"/>
+    </resultMap>
+
+</mapper>
