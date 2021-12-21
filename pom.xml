@@ -11,12 +11,19 @@
 
     <properties>
         <javaVersion>1.8</javaVersion>
+        <testng-version>7.4.0</testng-version>
         <mySqlConnectorVersion>8.0.27</mySqlConnectorVersion>
         <version.commons-io>2.4</version.commons-io>
         <mybatis-plus.version>2.1.8</mybatis-plus.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng-version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

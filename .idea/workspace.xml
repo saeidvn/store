@@ -6,31 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="748fa8ad-9640-4c55-9cb0-90f5276238a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Passport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/domain/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IAddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/AddressRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IChildRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/ChildRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IPassportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/PassportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/IStoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/StoreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/ChildRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/ChildRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/EmployeeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/StoreRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/StoreRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IChildService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/ChildService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IPassportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/PassportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/IStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/StoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/ChildServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/ChildServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/PassportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/PassportServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/StoreServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,15 +49,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../metro" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/testng-7.4.0.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.solvd.store.persistence" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/testng-suites" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG./home/sa/IdeaProjects/store/testng.xml">
     <configuration name="app" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.solvd.store.MainClass" />
       <module name="store" />
@@ -88,6 +71,115 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstTest" type="TestNG" temporary="true">
+      <module name="store" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.solvd.test" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.test.FirstTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solvd.test" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.test.SecondTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/sa/IdeaProjects/store/src/test/resources/testng-suites/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-suites/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/sa/IdeaProjects/store/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.FailedReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.solvd.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solvd.test" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.app" />
+      <item itemvalue="TestNG.FirstTest" />
+      <item itemvalue="TestNG.SecondTest" />
+      <item itemvalue="TestNG./home/sa/IdeaProjects/store/testng.xml" />
+      <item itemvalue="TestNG./home/sa/IdeaProjects/store/src/test/resources/testng-suites/testng.xml" />
+      <item itemvalue="TestNG.com.solvd.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./home/sa/IdeaProjects/store/testng.xml" />
+        <item itemvalue="TestNG.com.solvd.test" />
+        <item itemvalue="TestNG./home/sa/IdeaProjects/store/src/test/resources/testng-suites/testng.xml" />
+        <item itemvalue="TestNG.SecondTest" />
+        <item itemvalue="TestNG.FirstTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

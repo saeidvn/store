@@ -1,14 +1,11 @@
 package com.solvd.store;
 
 import com.solvd.store.domain.*;
-import com.solvd.store.persistence.StoreRepository;
-import com.solvd.store.persistence.impl.StoreRepositoryImpl;
 import com.solvd.store.service.*;
 import com.solvd.store.service.impl.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
@@ -46,9 +43,7 @@ public class MainClass {
 
         ChildService childService = new ChildServiceImpl();
 
-        childrenTest.stream().forEach(child -> {
-            childService.create(child);
-        });
+        childrenTest.forEach(child -> childService.create(child));
 
         Store storeTest = new Store();
         storeTest.setName("Store");
@@ -73,8 +68,6 @@ public class MainClass {
 
         System.out.println(stores);
 
-        stores.stream().forEach(store -> {
-            System.out.println(store.getEmployees());
-        });
+        stores.forEach(store -> System.out.println(store.getEmployees()));
     }
 }
