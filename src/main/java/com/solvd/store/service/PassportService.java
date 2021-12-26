@@ -2,8 +2,13 @@ package com.solvd.store.service;
 
 import com.solvd.store.domain.Passport;
 
+import java.time.LocalDate;
+
 public interface PassportService {
 
-    void create (Passport passport);
+    Passport create (Passport passport);
 
+    void update (Passport passport);
+
+    Passport get(LocalDate expireDate);
 }

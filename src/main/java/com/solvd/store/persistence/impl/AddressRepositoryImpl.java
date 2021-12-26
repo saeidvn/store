@@ -32,4 +32,31 @@ public class AddressRepositoryImpl implements AddressRepository {
             CONNECTION_POOL.releaseConnection(connection);
         }
     }
+
+    @Override
+    public Integer getCount() {
+        return null;
+    }
+
+    @Override
+    public void update(Address address) {
+        Connection connection = CONNECTION_POOL.getConnection();
+        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Addresses SET country = ?, city = ?, " +
+                " street = ?, entrance = ?")) {
+            preparedStatement.setString(1, address.getCountry());
+            preparedStatement.setString(2, address.getCity());
+            preparedStatement.setString(3, address.getStreet());
+            preparedStatement.setString(4, address.getEntrance());
+            preparedStatement.executeUpdate();
+        } catch (SQLException exception) {
+            throw new ProcessingException("Can't update address. ");
+        } finally {
+        CONNECTION_POOL.releaseConnection(connection);
+        }
+    }
+
+    @Override
+    public Address get(String country) {
+        return null;
+    }
 }

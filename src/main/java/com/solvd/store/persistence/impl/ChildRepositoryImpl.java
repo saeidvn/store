@@ -27,7 +27,7 @@ public class ChildRepositoryImpl implements ChildRepository {
                 child.setId(gkResultSet.getLong(1));
             }
         } catch (SQLException e) {
-            throw new ProcessingException("Unable to prepare Sql query. " + e.getMessage(), e);
+            throw new ProcessingException("Can't create. ", e);
         } finally {
             CONNECTION_POOL.releaseConnection(connection);
         }

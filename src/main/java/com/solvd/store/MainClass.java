@@ -12,15 +12,10 @@ import java.util.UUID;
 
 public class MainClass {
 
-    private static LocalDate convertStringToLocalDate(String date) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-        return LocalDate.parse(date, formatter);
-    }
-
     public static void main(String[] args) {
         Passport passportTest = new Passport();
         passportTest.setNumber("" + UUID.randomUUID());
-        passportTest.setExpireDate(convertStringToLocalDate("03-03-2023"));
+        passportTest.setExpireDate(LocalDate.of(2023, 03, 03));
         passportTest.setVisa(null);
 
         PassportService passportService = new PassportServiceImpl();
@@ -55,7 +50,7 @@ public class MainClass {
         Employee employeeTest = new Employee();
         employeeTest.setFirstName("FirstName");
         employeeTest.setLastName("LastName");
-        employeeTest.setDateOfBirth(convertStringToLocalDate("01-01-2021"));
+        employeeTest.setDateOfBirth(LocalDate.of(2021, 01, 01));
         employeeTest.setPassport(passportTest);
         employeeTest.setChildren(childrenTest);
         employeeTest.setAddress(addressTest);

@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fa8ad-9640-4c55-9cb0-90f5276238a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/AddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/AddressRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/PassportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/PassportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressMyBatisImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressMyBatisImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/AddressRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/ChildRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/ChildRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportMyBatisImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportMyBatisImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/PassportRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/StoreRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/persistence/impl/StoreRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/PassportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/PassportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/PassportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/store/service/impl/PassportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PassportMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PassportMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +69,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -63,7 +79,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources/testng-suites" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./home/sa/IdeaProjects/store/testng.xml">
+  <component name="RunManager" selected="Application.app">
     <configuration name="app" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.solvd.store.MainClass" />
       <module name="store" />
@@ -71,19 +87,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest" type="TestNG" temporary="true">
+    <configuration name="AddressServiceTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solvd.store" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.store.AddressServiceTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PassportServiceTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="store" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.solvd.test.*" />
+          <option name="PATTERN" value="com.solvd.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.solvd.test" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.test.FirstTest" />
+      <option name="PACKAGE_NAME" value="com.solvd.store" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.store.PassportServiceTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -102,12 +135,12 @@
       <module name="store" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.solvd.test.*" />
+          <option name="PATTERN" value="com.solvd.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.test" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.test.SecondTest" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.store.SecondTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -117,19 +150,9 @@
     </configuration>
     <configuration name="/home/sa/IdeaProjects/store/src/test/resources/testng-suites/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="store" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-suites/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/home/sa/IdeaProjects/store/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="store" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-suites/testng.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -139,23 +162,20 @@
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter" />
-        <listener class="org.testng.reporters.FailedReporter" />
-      </listeners>
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.solvd.test" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="com.solvd.store" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="store" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.solvd.test.*" />
+          <option name="PATTERN" value="com.solvd.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.solvd.test" />
+      <option name="PACKAGE_NAME" value="com.solvd.store" />
       <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
@@ -165,19 +185,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.app" />
-      <item itemvalue="TestNG.FirstTest" />
       <item itemvalue="TestNG.SecondTest" />
-      <item itemvalue="TestNG./home/sa/IdeaProjects/store/testng.xml" />
       <item itemvalue="TestNG./home/sa/IdeaProjects/store/src/test/resources/testng-suites/testng.xml" />
-      <item itemvalue="TestNG.com.solvd.test" />
+      <item itemvalue="TestNG.PassportServiceTest" />
+      <item itemvalue="TestNG.AddressServiceTest" />
+      <item itemvalue="TestNG.com.solvd.store" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./home/sa/IdeaProjects/store/testng.xml" />
-        <item itemvalue="TestNG.com.solvd.test" />
+        <item itemvalue="TestNG.com.solvd.store" />
+        <item itemvalue="TestNG.PassportServiceTest" />
+        <item itemvalue="TestNG.AddressServiceTest" />
         <item itemvalue="TestNG./home/sa/IdeaProjects/store/src/test/resources/testng-suites/testng.xml" />
         <item itemvalue="TestNG.SecondTest" />
-        <item itemvalue="TestNG.FirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +222,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/store$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1639832646313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Store" verbose="1" >
+    <test name="Regression">
+        <classes>
+            <class name="com.solvd.store.PassportServiceTest">
+                <methods>
+                    <include name="verifyCreatePassportTest"/>
+                    <include name="verifyUpdatePassportTest"/>
+                    <include name="testPassportCreateDataProvider"/>
+                </methods>
+            </class>
+            <class name="com.solvd.store.AddressServiceTest">
+                <methods>
+                    <include name="testCreateAddress"/>
+                    <include name="testUpdateAddress"/>
+                    <include name="testAddressCreateDataProvider"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -15,4 +15,16 @@
         <result property="entrance" column="address_entrance"/>
     </resultMap>
 
+    <update id = "update" useGeneratedKeys="false">
+        UPDATE Addresses SET country = #{country}, city = #{city}, street = #{street},  entrance = #{entrance}
+    </update>
+
+    <select id="getCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM Addresses
+    </select>
+
+    <select id = "get" resultMap="AddressResultMap">
+        SELECT id AS address_id, country, city, street, entrance FROM Addresses WHERE country = #{country} limit 1
+    </select>
+
 </mapper>

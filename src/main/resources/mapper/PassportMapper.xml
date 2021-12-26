@@ -6,6 +6,10 @@
         Insert into Passports (number, expire_date) values (#{number}, #{expireDate})
     </insert>
 
+    <update id = "update" useGeneratedKeys="false">
+        UPDATE Passports SET number = #{number}, expire_date = #{expireDate}
+    </update>
+
     <resultMap id="PassportResultMap" type="com.solvd.store.domain.Passport" autoMapping="false">
         <id property="id" column="passport_id"/>
         <result property="number" column="passport_number"/>

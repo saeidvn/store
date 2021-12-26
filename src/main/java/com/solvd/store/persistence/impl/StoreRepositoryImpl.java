@@ -13,7 +13,7 @@ public class StoreRepositoryImpl implements StoreRepository {
 
     private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
 
-    private static final String query = "select s.id as store_id, s.name as store_name," +
+    private static final String QUERY = "select s.id as store_id, s.name as store_name," +
             " e.first_name, e.last_name, e.date_of_birth," +
             " p.id as passport_id, p.number as passport_number, p.expire_date as passport_expireDate" +
             " from Stores as s left join Employees as e on e.store_id = s.id left join" +
@@ -45,7 +45,7 @@ public class StoreRepositoryImpl implements StoreRepository {
         Connection connection = CONNECTION_POOL.getConnection();
 
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            PreparedStatement preparedStatement = connection.prepareStatement(QUERY);
             ResultSet resultSet = preparedStatement.executeQuery();
             stores = mapStores(resultSet);
         } catch (SQLException e) {
